@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  font-family: Poppins;
+}
+body {
+  background-color: #00bb77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='0.08' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  background: #f1faee;
+}
+.container .card {
+  position: relative;
+  top: 140px;
+  margin: 0px 40px;
+}
+.card {
+  justify-content: center;
+  align-items: center;
+}
+.card-body {
+  position: relative;
+  right: 20px;
+}
+.regular {
+  background: #06d6a0;
+}
+
+.regular img {
+  position: relative;
+  top: 28px;
+}
+.regbtn {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+.admin {
+  background: #e63946;
+}
+.admin img {
+  position: relative;
+  left: 12px;
+}

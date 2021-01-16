@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body {
+  overflow-x: hidden;
+  background-color: #00bb77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='0.08' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+}
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #0b390b;
+  padding: 30px 0px;
+  opacity: 0.9;
+}
+.container .sidebar img {
+  position: relative;
+  left: 24px;
+
+  margin-bottom: 30px;
+}
+.container .sidebar ul li {
+  padding: 25px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.container .sidebar ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+}
+.container .sidebar ul li a .fas {
+  width: 25px;
+}
+.container .sidebar ul li a .far {
+  width: 25px;
+}
+.container .sidebar ul li:hover {
+  background-color: #594f8d;
+}
+.right-panel {
+  text-align: center;
+  margin-left: 400px;
+  width: 100%;
+  height: 100%;
+}
+.name {
+  position: relative;
+  right: 350px;
+  top: 100px;
+  margin-left: 200px;
+}
+.name h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  color: #03071e;
+}
+.content {
+  position: relative;
+  right: 250px;
+  top: 200px;
+}
+.searchbox {
+  margin: auto;
+  margin-top: 20%;
+  position: relative;
+  width: 300px;
+  height: 42px;
+  border: 4px solid #03071e;
+  padding: 0px 10px;
+  border-radius: 50px;
+  bottom: 300px;
+  overflow: hidden;
+}
+.search-table {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.search {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.search:focus {
+  outline: none;
+  overflow: hidden;
+}
+.fa-search {
+  font-size: 1.2rem;
+  color: #293241;
+}
+.guide {
+  font-size: 1.2rem;
+  position: relative;
+  right: 30px;
+}
+.acc {
+  font-size: 1.2rem;
+  position: relative;
+  left: 30px;
+}
+.radios {
+  position: relative;
+  bottom: 250px;
+}
+.radios label {
+  font-size: 1.2rem;
+}
+.submit-btn {
+  position: relative;
+  bottom: 200px;
+}
+.submit-btn button {
+  width: 220px;
+  height: 62px;
+  font-size: 1.3rem;
+  border-radius: 42px;
+  outline: none;
+}

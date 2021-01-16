@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/help.css" />
+    <script
+      src="https://kit.fontawesome.com/0b83e7a883.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image" href="../logos/favicon.ico" />
+    <title>Help</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="non-admin-profile.html"
+          ><img src="../images/icsresized.png" alt=""
+        /></a>
+        <ul>
+          <li>
+            <a href="profile-settings.html"
+              ><i class="fas fa-user"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="events.html"><i class="fas fa-calendar-week"></i>Events</a>
+          </li>
+          <li>
+            <a href="records.html"><i class="far fa-clipboard"></i>Records</a>
+          </li>
+          <li>
+            <a href="loans.html"><i class="fas fa-hands-helping"></i>Loans</a>
+          </li>
+          <li>
+            <a href="help.html"><i class="far fa-question-circle"></i>Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-panel">
+        <div class="name">
+          <h2>NEED HELP?</h2>
+        </div>
+        <form action="" class="content">
+          <div class="searchbox">
+            <table class="search-table">
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Whats the Problem?"
+                    class="search"
+                  />
+                </td>
+                <td>
+                  <a href="#"><i class="fas fa-search"></i></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="radios">
+            <input type="radio" id="legal" name="help" class="radio" />
+            <label for="legal">Is this Legal?</label>
+            <input type="radio" id="fix" name="help" class="radio" />
+            <label for="fix">Fix a problem</label>
+            <br />
+            <br />
+            <input type="radio" id="guide" name="help" class="guide" />
+            <label for="guide" class="guide">Guide</label>
+            <input type="radio" id="account" name="help" class="acc" />
+            <label for="account" class="acc">Your Account</label>
+          </div>
+          <div class="submit-btn">
+            <button>Submit Issue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

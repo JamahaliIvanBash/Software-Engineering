@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background-color: #113311;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1467' height='1467' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.91'%3E%3Cpolygon fill='%2365ad6f' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%2365ad6f' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+.container {
+  width: 100%;
+  overflow-x: hidden;
+
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 100px;
+  right: 0;
+  background-image: url(../images/icsresized.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 1050px;
+  right: 0;
+  background-image: url(../images/wmsuresized.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.signup-form {
+  width: 300px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  left: 550px;
+  top: 20px;
+}
+.signup-form input {
+  border: 2px solid black;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+
+  color: black;
+  border-radius: 10px;
+}
+
+.signup-form label {
+  position: relative;
+
+  color: black;
+}
+.save,
+.cancel {
+  color: black;
+  padding: 10px 20px;
+  margin: 5px 0 22px 0;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  width: 100px;
+  background-color: whitesmoke;
+}
+.save {
+  margin-right: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: transparent;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.save:hover,
+.cancel:hover {
+  background-color: darkgrey;
+}
+.reg {
+  position: relative;
+  left: 640px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  color: black;
+}

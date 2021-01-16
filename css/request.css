@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.btn {
+  width: 100px;
+  margin: 0px 20px;
+  font-weight: bold;
+}
+.table * {
+  border: 1px solid black;
+}
+.a {
+  background: #106610;
+  color: white;
+}
+.a:hover {
+  background: #50ac50;
+}
+.d {
+  color: red;
+}
+.d:hover {
+  background: gray;
+}
+.table {
+  text-align: center;
+  overflow: visible;
+}
+.container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 40px;
+}
+.table thead tr {
+  background: #0b390b;
+  opacity: 0.8;
+  color: white;
+}
+.back {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.back a {
+  color: black;
+}
