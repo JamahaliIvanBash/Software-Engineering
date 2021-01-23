@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  text-decoration: none;
 }
 body {
   overflow-x: hidden;
@@ -128,4 +129,14 @@ body {
   font-size: 1.3rem;
   border-radius: 42px;
   outline: none;
+}
+.l-out {
+  color: white;
+  background: green;
+  position: absolute;
+  left: 1200px;
+  top: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 18px;
 }

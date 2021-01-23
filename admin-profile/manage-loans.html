@@ -13,34 +13,30 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" type="image" href="../logos/favicon.ico" />
-    <link rel="stylesheet" href="../css/member-config.css" />
-
-    <title>Member Configuration</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/manage-loans.css" />
+    <title>MANAGE || LOANS</title>
   </head>
   <body>
-    <h1>ICS FACULTY MEMBERS</h1>
+    <div class="h2">
+    <h2>LOAN MANAGEMENT</h2>
+  </div>
     <div class="container">
-      <div class="card" style="width: 10rem">
+      <div class="card" style="width: 15rem">
         <div class="card-body">
-          <h5 class="card-title">ACCOUNTS</h5>
-
-          <a href="../landpage-login/signup.html" class="btn btn-primary"
-            >CREATE</a
-          >
-        </div>
-      </div>
-      <div class="card" style="width: 10rem">
-        <div class="card-body">
-          <h5 class="card-title">FACULTY MEMBERS</h5>
-
+          <h5 class="card-title">CREATE LOANS</h5>
+         
           <button
             type="button"
             class="btn btn-primary"
             data-toggle="modal"
             data-target="#exampleModalCenter"
           >
-            CHECK LIST
+            CREATE
           </button>
 
           <div
@@ -52,71 +48,114 @@
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content list">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form">
+                    <form>
+                      <label for="name">Type of Loan</label>
+                      <input type="text" required />
+                     
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 15rem">
+        <div class="card-body">
+          <h5 class="card-title">MODIFY LOANS</h5>
+        
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#modify"
+          >
+            MODIFY
+          </button>
+
+          <div
+            class="modal fade"
+            id="modify"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLongTitle">
-                    ICS FACULTY MEMBERS
+                    Modal title
                   </h5>
                   <button
                     type="button"
                     class="close"
                     data-dismiss="modal"
                     aria-label="Close"
-                  ></button>
+                  >
+                   
+                  </button>
                 </div>
                 <div class="modal-body">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Work Position</th>
-                        <th scope="col">Dues</th>
-                        <th scope="col">Action</th>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Due Date</th>
+                          <th scope="col">Action</th>
+                        </tr>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Regular</td>
-                        <td>Not Paid</td>
-                        <td><button>Update</button></td>
+                        <td>PSITS</td>
+                        <td>50</td>
+                        <td>February 24</td>
+                        <td><button class="btn a">UPDATE</button><button class="btn d">DELEETE</button></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Associate</td>
-                        <td>Not Paid</td>
-                        <td><button>Update</button></td>
+                        <td>PALARO</td>
+                        <td>150</td>
+                        <td>March 24</td>
+                        <td><button class="btn a">UPDATE</button><button class="btn d">DELEETE</button></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Regular</td>
-                        <td>Paid</td>
-                        <td><button>Update</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Associate</td>
-                        <td>Paid</td>
-                        <td><button>Update</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Associate</td>
-                        <td>Paid</td>
-                        <td><button>Update</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">6</th>
-                        <td>Ivan Bash Jamahali</td>
-                        <td>Associate</td>
-                        <td>Paid</td>
-                        <td><button>Update</button></td>
+                        <td>SOCIALIZATION</td>
+                        <td>450</td>
+                        <td>March 14</td>
+                        <td><button class="btn a">UPDATE</button><button class="btn d">DELEETE</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -138,7 +177,69 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 10rem">
+      <div class="card" style="width: 15rem">
+        <div class="card-body">
+          <h5 class="card-title">VIEW LOANS</h5>
+          
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">
+  VIEW
+</button>
+
+
+<div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Due Date</th>
+               
+              </tr>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>PSITS</td>
+              <td>50</td>
+              <td>February 24</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>PALARO</td>
+              <td>150</td>
+              <td>March 24</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>SOCIALIZATION</td>
+              <td>450</td>
+              <td>March 14</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="card" style="width: 15rem">
         <div class="card-body">
           <h5 class="card-title">VERIFY LOANS</h5>
           <button
@@ -171,8 +272,8 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body ">
-                  <table class="table table-responsive">
+                <div class="modal-body table-responsive">
+                  <table class="table">
                     <thead>
                       <tr>
                         <tr>

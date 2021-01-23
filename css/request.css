@@ -30,15 +30,15 @@
   text-align: center;
   overflow: visible;
 }
-.container h2 {
-  font-size: 2.2rem;
-  text-align: center;
-  margin: 40px;
-}
 .table thead tr {
   background: #0b390b;
   opacity: 0.8;
   color: white;
+}
+.container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 40px;
 }
 .back {
   position: absolute;
@@ -49,4 +49,14 @@
 }
 .back a {
   color: black;
+}
+.l-out {
+  color: white;
+  background: green;
+  position: absolute;
+  left: 1200px;
+  top: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 18px;
 }

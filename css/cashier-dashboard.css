@@ -1,16 +1,14 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
-  text-decoration: none;
-  font-family: Poppins;
+  box-sizing: border-box;
+  font-family: poppins;
 }
 body {
+  overflow-x: hidden;
   background-color: #00bb77;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='0.08' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
-  overflow-x: hidden;
 }
-
 .container {
   display: flex;
   align-items: center;
@@ -21,8 +19,8 @@ body {
 }
 .home {
   position: absolute;
-  left: 240px;
-  top: 175px;
+  left: 200px;
+  top: 185px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,20 +35,16 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
 }
-.home a {
-  text-decoration: none;
-}
-
-.settings {
+.pay {
   position: absolute;
-  left: 400px;
+  left: 560px;
   top: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.settings button {
+.pay button {
   text-align: center;
   width: 200px;
   border-radius: 15px;
@@ -59,47 +53,10 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
 }
-.requests {
+.assets {
   position: absolute;
   left: 920px;
   top: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.requests button {
-  text-align: center;
-  width: 200px;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  background: #0077b6;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.badge {
-  color: red;
-  font-size: 1.2rem;
-}
-h2 {
-  position: relative;
-  left: 525px;
-  padding-top: 40px;
-  font-size: 3.2rem;
-  font-weight: bold;
-  font-family: "Texturina", serif;
-  margin-bottom: 140px;
-}
-.requests img {
-  padding-bottom: 10px;
-}
-.settings img {
-  padding-bottom: 10px;
-}
-.assets {
-  position: relative;
-  top: 155px;
-  left: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,27 +71,15 @@ h2 {
   font-family: "Roboto", sans-serif;
   color: white;
 }
-.loans img {
+
+h2 {
   position: relative;
-  bottom: 100px;
-  left: 80px;
-}
-.loans a {
-  position: relative;
-  right: 100px;
-}
-.loans a button {
-  text-align: center;
-  width: 200px;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  background: #0077b6;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.loans {
-  position: relative;
-  left: 125px;
+  left: 525px;
+  padding-top: 40px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "Texturina", serif;
+  margin-bottom: 140px;
 }
 .l-out {
   color: white;

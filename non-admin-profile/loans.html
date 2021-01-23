@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/loans.css" />
-    <link rel="shortcut icon" type="image" href="../logos/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <script
       src="https://kit.fontawesome.com/0b83e7a883.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/loans.css" />
+    <link rel="shortcut icon" type="image" href="../logos/favicon.ico" />
 
-    <title>Loaning</title>
+    <title>LOANS</title>
   </head>
   <body>
     <div class="container">
@@ -38,32 +52,92 @@
           </li>
         </ul>
       </div>
+      <h2>LOAN APPLICATION</h2>
       <div class="right-panel">
-        <div class="contact-form">
-          <h2>Contact Information</h2>
-          <input type="text" class="input" placeholder="First Name" />
-          <input type="text" class="input" placeholder="Middle Name" />
-          <input type="text" class="input" placeholder="Last Name" />
-          <input type="number" class="input" placeholder="Phone Number" />
-          <input type="text" class="input" placeholder="Email Address" />
-          <input type="text" class="input" placeholder="Address" />
+        <div class="personal-info">
+          <h3>Personal Information</h3>
+          <label for="name">Name</label>
+          <input
+            class="form-control name"
+            type="text"
+            placeholder="Cardo Dalisay"
+            readonly
+          />
+          <label for="address" class="add">Address</label>
+          <input
+            class="form-control add"
+            type="text"
+            placeholder="Tondo, Manila"
+            readonly
+          />
+          <label for="work-pos" class="work">Work Position</label>
+          <input
+            class="form-control work"
+            type="text"
+            placeholder="Visiting Lecturer"
+            readonly
+          />
         </div>
-        <div class="employment-form">
-          <h2>Employment Information</h2>
-          <input type="text" class="input" placeholder="Work Position" />
-          <input type="date" class="input" placeholder="Date Employed" />
-          <input type="number" class="input" placeholder="Salary" />
+        <div class="form">
+          <form>
+            <h3>Account Information</h3>
+            <div class="form-group">
+              <label for="accountNumber">Account Number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="accountNumber"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="form-group">
+              <label for="loan-amount">Loan Amount</label>
+              <input type="number" class="form-control" id="loan-amount" />
+            </div>
+            <div class="form-group">
+              <label for="purpose">Purpose</label>
+              <textarea
+                class="form-control"
+                id="purpose"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
         </div>
-        <div class="financial-form">
-          <h2>Financial Information</h2>
-          <input type="text" class="input" placeholder="Loan Usage" />
-          <input type="number" class="input" placeholder="Amount of Loan" />
-          <input type="number" class="input" placeholder="Months to Pay" />
+        <div class="drop-down">
+          <label for="loantype">Type of Loan</label>
+          <select name="loantype" id="loantype">
+            <option value="Associate">...</option>
+            <option value="Regular">Faculty Assistance Loan</option>
+          </select>
         </div>
       </div>
-      <div class="btn">
-        <button>SUBMIT</button>
-      </div>
+      <button type="button" class="btn btn-primary btn-lg btn-block">
+        Submit
+      </button>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">
+        Cancel
+      </button>
     </div>
+    <div class="nav">
+      <a href="../index.html" class="l-out">Log out</a>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

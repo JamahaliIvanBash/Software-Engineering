@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/pay-cashier.css" />
+
+    <title>PAYMENT</title>
+  </head>
+  <body>
+    <h2>PAYMENT</h2>
+    <div class="container">
+      <div class="card" style="width: 10rem">
+        <div class="card-body fees">
+          <h5 class="card-title">FEES</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            PAY
+          </button>
+
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content list">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    MEMBER LIST
+                  </h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name of Fee</th>
+                             
+                              <th scope="col">Amount</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>PISTS</td>
+                            <td>150</td>
+                            <td><button class="btn a">PAY</button>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Collection</td>
+                            <td>80</td>
+                            <td><button class="btn a">PAY</button>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="searchbox">
+                        <table class="search-table">
+                          <tr>
+                            <td>
+                              <input
+                                type="text"
+                                placeholder="Ivan Bash Jamahali"
+                                class="search"
+                              />
+                            </td>
+                            <td>
+                              <a href="#"><i class="fas fa-search"></i></a>
+                            </td>
+                            <td><button class="btn-search">Search</button></td>
+                          </tr>
+                        </table>
+                        
+                      </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card loans" style="width: 10rem">
+        <div class="card-body">
+          <h5 class="card-title">CONTRIBUTION</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#contribution"
+          >
+            PAY
+          </button>
+
+          <div
+            class="modal fade"
+            id="contribution"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content contributions">
+                <div class="modal-header">
+                  <h5 class="modal-title payment" id="exampleModalLongTitle">
+                   CONTRIBUTION PAYMENT
+                  </h5>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card loans" style="width: 10rem">
+        <div class="card-body">
+          <h5 class="card-title">LOANS</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#loans"
+          >
+            PAY
+          </button>
+
+          <div
+            class="modal fade"
+            id="loans"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content loan-content">
+                <div class="modal-header loan-pay">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    LOAN PAYMENT
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    
+                  </button>
+                </div>
+                <div class="modal-body loan">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Work Position</th>
+                              <th scope="col">Loan Amount</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Ivan Bash Jamahali</td>
+                            <td>Visiting Lecturer</td>
+                            <td>120,000</td>
+                            <td><button class="btn a">PAY</button>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Ivan Bash Jamahali</td>
+                            <td>Visiting Lecturer</td>
+                            <td>50,000</td>
+                            <td><button class="btn a">PAY</button>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Ivan Bash Jamahali</td>
+                            <td>Visiting Lecturer</td>
+                            <td>80,000</td>
+                            <td><button class="btn a">PAY</button>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="nav">
+        <a href="../index.html" class="l-out">Log out</a>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

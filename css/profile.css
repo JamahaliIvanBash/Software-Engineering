@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: poppins;
+  text-decoration: none;
 }
 body {
   background-color: #00bb77;
@@ -135,10 +136,21 @@ body {
 .btn:hover {
   background: rgb(41, 183, 226);
 }
+
 .right-panel h5 {
   cursor: default;
   position: relative;
   left: 10px;
   bottom: 50px;
   font-size: 1.2rem;
+}
+.l-out {
+  color: white;
+  background: green;
+  position: absolute;
+  left: 1200px;
+  top: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 18px;
 }

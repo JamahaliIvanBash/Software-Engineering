@@ -176,16 +176,7 @@ form {
 .image {
   width: 100%;
 }
-.signup-word {
-  color: white;
-}
-.signup-word a {
-  color: white;
-  text-decoration: none;
-}
-.signup-word a:hover {
-  text-decoration: underline;
-}
+
 #btn1 {
   width: 180px;
   height: 50px;

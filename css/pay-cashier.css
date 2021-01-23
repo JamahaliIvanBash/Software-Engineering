@@ -1,13 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
-  text-decoration: none;
-  font-family: Poppins;
-}
-h1 {
-  text-align: center;
-  margin: 50px;
+  box-sizing: border-box;
+  font-family: poppins;
 }
 body {
   background-color: #00bb77;
@@ -17,6 +12,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+h2 {
+  position: relative;
+  left: 580px;
+  padding-top: 40px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "Texturina", serif;
+  margin-bottom: 140px;
 }
 .table {
   align-items: center;
@@ -42,8 +46,24 @@ body {
 .list {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
+}
+.loans {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.fees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.btn-search {
+  margin-left: 10px;
 }
 .l-out {
   color: white;
@@ -55,7 +75,15 @@ body {
   padding: 5px;
   font-size: 18px;
 }
-.btnverify {
-  position: relative;
-  right: 125px;
+.contributions {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.loan-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
