@@ -28,9 +28,9 @@
     <title>PAYMENT</title>
   </head>
   <body>
-    <h2>PAYMENT</h2>
+    <h2>PAYMENTS AND LOAN QUERIES</h2>
     <div class="container">
-      <div class="card" style="width: 10rem">
+      <div class="card" style="width: 10rem; height: 8rem;">
         <div class="card-body fees">
           <h5 class="card-title">FEES</h5>
           <button
@@ -128,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="card loans" style="width: 10rem">
+      <div class="card loans" style="width: 10rem; height: 8rem;">
         <div class="card-body">
           <h5 class="card-title">CONTRIBUTION</h5>
           <button
@@ -173,7 +173,7 @@
           </div>
         </div>
       </div>
-      <div class="card loans" style="width: 10rem">
+      <div class="card loans" style="width: 10rem;  height: 8rem;">
         <div class="card-body">
           <h5 class="card-title">LOANS</h5>
           <button
@@ -263,7 +263,198 @@
           </div>
         </div>
       </div>
-      
+      <div class="card verify" style="width: 10rem; height: 8rem;" >
+        <div class="card-body">
+          <h5 class="card-title">VERIFY LOANS</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#verify-loan"
+          >
+            VERIFY
+          </button>
+
+          <div
+            class="modal fade"
+            id="verify-loan"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content ve-loan">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    LOAN LISTS
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body table-responsive">
+                  <table class="table table-responsive">
+                    <thead>
+                      <tr>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Work Position</th>
+                          <th scope="col">Salary</th>
+                          <th scope="col">Type of Loan</th>
+                          <th scope="col">Possible Loan Amount</th>
+                          <th scope="col">Months to Pay</th>
+                          <th scope="col">Approval</th>
+                        </tr>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Ivan Bash Jamahali</td>
+                        <td>Visiting Lecturer</td>
+                        <td>₱22,000</td>
+                        <td>Personal Loan</td>
+                        <td>₱35,000</td>
+                        <td>36</td>
+                        <td><button class="btn a">ACCEPT</button><button class="btn d">DENY</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Ivan Bash Jamahali</td>
+                        <td>Visiting Lecturer</td>
+                        <td>₱14,000</td>
+                        <td>Mortgages Loan</td>
+                        <td>₱15,000</td>
+                        <td>24</td>
+                        <td><button class="btn a">ACCEPT</button><button class="btn d">DENY</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Ivan Bash Jamahali</td>
+                        <td>Visiting Lecturer</td>
+                        <td>16,000</td>
+                        <td>Faculty Assistance Loan</td>
+                        <td>₱5,000</td>
+                        <td>12</td>
+                        <td><button class="btn a">ACCEPT</button><button class="btn d">DENY</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btnverify"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btnverify">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card fac-loans" style="width: 10rem; height: 8rem;">
+        <div class="card-body">
+          <h5 class="card-title">FACULTY LOANS</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#faculty-loan"
+          >
+            CHECK LIST
+          </button>
+
+          <div
+            class="modal fade"
+            id="faculty-loan"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content ve-loan">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    LOAN LISTS
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body ">
+                  <table class="table table-responsive">
+                    <thead>
+                      <tr>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Work Position</th>
+                          <th scope="col">Type of Loan</th>
+                          <th scope="col">Remaining Balance</th>
+                          <th scope="col">Months Left to Pay</th>
+                        </tr>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Ivan Bash Jamahali</td>
+                        <td>Visiting Lecturer</td>
+                        <td>Personal Loan</td>
+                        <td>₱22,421</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cardo Dalisay</td>
+                        <td>Regular Teacher</td>
+                        <td>FAL</td>
+                        <td>₱2,285</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Juan Ponce Enrile</td>
+                        <td>Faculty Staff</td>
+                        <td>Mortgages Loan</td>
+                        <td>₱9,765</td>
+                        <td>14</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btnverify"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btnverify">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="nav">
         <a href="../index.html" class="l-out">Log out</a>

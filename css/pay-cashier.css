@@ -15,7 +15,7 @@ body {
 }
 h2 {
   position: relative;
-  left: 580px;
+  left: 300px;
   padding-top: 40px;
   font-size: 3.2rem;
   font-weight: bold;
@@ -82,6 +82,18 @@ h2 {
   justify-content: center;
 }
 .loan-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.verify {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.fac-loans {
   display: flex;
   align-items: center;
   text-align: center;
